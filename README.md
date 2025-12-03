@@ -1,11 +1,9 @@
-# 🚆 Train Booking App
+#  Train Booking App
 
-Bienvenue ! ✨  
-Ce repository contient une application web de réservation de trains construite avec Next.js et TypeScript, utilisant Prisma pour la gestion de la base de données. Ce README décrit le projet, son scope, comment l'installer, le lancer en local, le builder pour la production, et les bonnes pratiques pour contribuer.
 
 ---
 
-## 🧩 Présentation du projet
+##  Présentation du projet
 
 Train Booking App est une application moderne de réservation de billets de train :
 - Frontend en Next.js + React (TypeScript)
@@ -18,7 +16,7 @@ But : démontrer un workflow fullstack TypeScript/Next.js avec une couche persis
 
 ---
 
-## 📂 Structure principale du dépôt
+##  Structure principale du dépôt
 
 - /app — code applicatif (pages / routes / components)
 - /lib — utilitaires réutilisables
@@ -40,7 +38,7 @@ Avant d'installer et lancer le projet, assurez-vous d'avoir :
 
 ---
 
-## 🔧 Installation (locale)
+##  Installation (locale)
 
 1. Clonez le dépôt
    ```
@@ -76,7 +74,7 @@ Note : Le package.json contient un script `prisma.seed` pointant vers `ts-node p
 
 ---
 
-## ▶️ Scripts utiles (extraits de package.json)
+##  Scripts utiles (extraits de package.json)
 
 - Développement :
   ```
@@ -158,7 +156,7 @@ Vérifiez la configuration dans le code (probablement sous /lib ou /app/api/auth
 
 ---
 
-## ✅ Checklist pour lancer l'app localement (récap rapide)
+##  Checklist pour lancer l'app localement (récap rapide)
 
 1. Installer Node.js et PostgreSQL
 2. Cloner et installer dépendances
@@ -169,27 +167,16 @@ Vérifiez la configuration dans le code (probablement sous /lib ou /app/api/auth
 
 ---
 
-## 🚀 Déploiement
+##  Déploiement
 
 - Le build (`npm run build`) inclut les étapes Prisma (migrations / generate). Sur votre CI/CD, appliquez les migrations sur la DB de production avant de lancer l'image.
 - Pour une stack containerisée : créer image Docker, pousser vers votre registry, déployer avec Kubernetes / Fly / Vercel / etc. (Vercel peut aussi déployer Next.js mais gérer Prisma/DB séparément).
 
 ---
 
-## 🧪 Tests & qualité
+## Tests & qualité
 
 - ESLint est configuré (`npm run lint`)
 - Ajouter des tests unitaires / d'intégration (Jest/Testing Library) est fortement recommandé.
 
----
 
-## 🤝 Contribution
-
-Contributions bienvenues !  
-- Ouvrez une issue pour discuter des changements majeurs
-- Fork → branche → PR avec description claire
-- Respectez la structure du projet et les conventions TypeScript/ESLint
-
----
-
-Merci d'avoir regardé ce projet🚆✨
