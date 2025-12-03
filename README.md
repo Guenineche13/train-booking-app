@@ -28,9 +28,10 @@ But : démontrer un workflow fullstack TypeScript/Next.js avec une couche persis
 
 ---
 
-## ⚙️ Prérequis
+## 
+Prérequis
 
-Avant d'installer et lancer le projet, assurez-vous d'avoir :
+
 - Node.js (version recommandée : 18+ ou celle compatible avec Next.js 15)
 - pnpm / npm / yarn (ici les scripts sont compatibles avec npm)
 - Une base de données PostgreSQL (ou autre supportée par Prisma)
@@ -105,7 +106,7 @@ Note : Le package.json contient un script `prisma.seed` pointant vers `ts-node p
 
 ---
 
-## 🗃️ Dépendances principales
+##  Dépendances principales
 
 (Extraits du package.json)
 - runtime :
@@ -123,7 +124,7 @@ Note : Le package.json contient un script `prisma.seed` pointant vers `ts-node p
 
 ---
 
-## 🐘 Prisma — détails DB
+##  Prisma — détails DB
 
 - Le dossier `prisma/` contient le fichier `schema.prisma` et potentiellement un seeder `prisma/seed.ts`.
 - Commandes Prisma utiles :
@@ -134,7 +135,7 @@ Note : Le package.json contient un script `prisma.seed` pointant vers `ts-node p
 
 ---
 
-## 🐳 Docker
+##  Docker
 
 Un Dockerfile est inclus pour construire une image de production. Exemple basique :
 ```
@@ -145,7 +146,7 @@ Adaptez les variables d'environnement et volumes selon votre infra.
 
 ---
 
-## 🔐 Authentification
+## Authentification
 
 Le projet mentionne NextAuth dans les dépendances. Variables fréquentes :
 - NEXTAUTH_URL
